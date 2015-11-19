@@ -5,6 +5,9 @@ if (Meteor.isClient) {
     Template.hello.helpers({
         counter: function () {
           return Session.get('counter');
+        },
+        title: function() {
+            return "Home";
         }
     });
 
@@ -22,6 +25,11 @@ if (Meteor.isServer) {
   });
 }
 
+
+//Routes
+Router.configure({
+    layoutTemplate:'frame'
+});
 Router.route('/', function () {
     this.render('hello');
 });
