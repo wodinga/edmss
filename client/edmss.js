@@ -8,5 +8,12 @@ Router.route('/', function () {
     });
 });
 Router.route('/about', function () {
-    this.render('About');
+    this.render('About', {
+        title: 'About'
+    });
+});
+Router.route('/contact', function () {
+    this.render('Contact', {
+        title: 'Contact'
+    });
 });
