@@ -18,6 +18,9 @@ body {
     text-align: center;
 }
 
+#player-btns {
+    padding-top: 1.5%;
+}
 /* Set the fixed height of the footer here */
 #footer {
     position: absolute;
