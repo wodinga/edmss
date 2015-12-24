@@ -17,3 +17,20 @@ Router.route('/contact', function () {
         title: 'Contact'
     });
 });
+
+if (Meteor.isClient) {
+    Template.Footer.helpers({
+        title : "Home"
+    });
+
+    Template.Footer.events({
+        'click i' : function() {
+            $('#icon').toggleClass('fa-play fa-pause'); 
+        }
+    });
+}
+
+if (Meteor.isServer) {
+    Meteor.startup(function () {
+    });
+}
