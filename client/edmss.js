@@ -26,6 +26,16 @@ if (Meteor.isClient) {
     Template.Footer.events({
         'click i' : function() {
             $('#icon').toggleClass('fa-play fa-pause'); 
+            var playBtn = document.getElementById("source");
+            if($('#icon').hasClass('fa-play'))
+            {
+                playBtn.pause();
+            }
+            else if($('#icon').hasClass('fa-pause'))
+            {
+                playBtn.play();
+            }
+                
         }
     });
 }
