@@ -24,7 +24,7 @@ if (Meteor.isClient) {
     });
 
     Template.Footer.events({
-        'click i' : function() {
+        'click #play-btn' : function() {
             $('#icon').toggleClass('fa-play fa-pause'); 
             var playBtn = document.getElementById("source");
             if($('#icon').hasClass('fa-play'))
@@ -36,6 +36,15 @@ if (Meteor.isClient) {
                 playBtn.play();
             }
                 
+        }
+    });
+    Template.frame.events({
+        'click a' : function(event) {
+            console.log(event.target)
+            var url = document.URL;
+            console.log(url);
+            $(".nav").find(".active").removeClass("active");
+            $(event.target).parent().addClass("active");
         }
     });
 }
