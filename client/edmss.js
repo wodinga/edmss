@@ -20,7 +20,15 @@ Router.route('/contact', function () {
 
 if (Meteor.isClient) {
     Template.Footer.helpers({
-        title : "Home"
+        title : "Home",
+        isTime : function(){
+            var day = new Date().getDay();
+            var hour= new Date().getHours();
+            console.log("Day = " + day);
+            console.log("Hour = " + hour);
+            //Returns true if day = Saturday and time is 9PM or later
+            return day == 6 && hour >= 21;
+        }
     });
 
     Template.Footer.events({
