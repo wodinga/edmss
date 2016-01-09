@@ -24,8 +24,6 @@ if (Meteor.isClient) {
         isTime : function(){
             var day = new Date().getDay();
             var hour= new Date().getHours();
-            console.log("Day = " + day);
-            console.log("Hour = " + hour);
             //Returns true if day = Saturday and time is 9PM or later
             return day == 6 && hour >= 21;
         }
@@ -48,9 +46,7 @@ if (Meteor.isClient) {
     });
     Template.frame.events({
         'click a' : function(event) {
-            console.log(event.target)
             var url = document.URL;
-            console.log(url);
             $(".nav").find(".active").removeClass("active");
             $(event.target).parent().addClass("active");
         }
