@@ -1,0 +1,38 @@
+/* CSS declarations go here */
+//$body-bg: $gray-dark;
+//$navbar-inverse-bg: #FFFFFF;
+@import '{reywood:bootstrap3-sass}/bootstrap';
+
+body {
+  padding-top: 50px;
+}
+#wrap{
+    padding: 40px 15px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#player-btns {
+    padding-top: 1.5%;
+}
+/* Set the fixed height of the footer here */
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $gray-dark;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
