@@ -1,11 +1,13 @@
 /* CSS declarations go here */
 @import '_palette';
-$body-bg: #505050;
-$navbar-inverse-bg: $color-primary-0;
-$navbar-inverse-link-active-color: #2C87FC; //Active link
-$navbar-inverse-link-color: #1FD0F9;
-$link-color: $color-primary-4;
-$text-color: $gray-lighter;
+$body-bg:                           $color-secondary-1-0;
+$navbar-inverse-bg:                 $color-primary-0;
+$navbar-inverse-link-active-color:  $color-secondary-1-1; //Active link
+$navbar-inverse-link-color:         $color-secondary-1-2;
+$link-color:                        $color-secondary-2-0;
+$link-hover-color:                  lighten($link-color, 15%);
+$text-color:                        $color-secondary-2-3;
+$headings-color:                    $color-secondary-2-1;
 @import '{reywood:bootstrap3-sass}/bootstrap';
 
 body {
