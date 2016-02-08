@@ -1,6 +1,11 @@
 /* CSS declarations go here */
-//$body-bg: $gray-dark;
-//$navbar-inverse-bg: #FFFFFF;
+@import '_palette';
+$body-bg: #505050;
+$navbar-inverse-bg: $color-primary-0;
+$navbar-inverse-link-active-color: #2C87FC; //Active link
+$navbar-inverse-link-color: #1FD0F9;
+$link-color: $color-primary-4;
+$text-color: $gray-lighter;
 @import '{reywood:bootstrap3-sass}/bootstrap';
 
 body {
@@ -15,7 +20,6 @@ body {
     margin: 0 auto -60px;
     /* Pad bottom by footer height */
     padding: 0 0 60px;
-    background-color: #f0f0f0;
 }
 
 .container {
@@ -31,7 +35,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: $gray-dark;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
