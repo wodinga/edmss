@@ -32,13 +32,6 @@ if (!Meteor.isClient) {
             var hour = new Date(ESTtime).getHours(); //EST time conversion
             var min = new Date(ESTtime).getMinutes();
             console.log(localOffset);
-            // if (hour <= 0) {
-            //     day--;
-            //     hour = 24 + hour;
-            // }
-            console.log("Day = " + day);
-            console.log("Hour = " + hour);
-            console.log("min= " + min);
             //Returns true if day = Saturday and time is 9PM or later
             return day == 6 && hour >= 21;
         }
