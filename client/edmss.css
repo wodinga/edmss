@@ -27,8 +27,8 @@ p {
 }
 
 .box {
-    margin-left: 25%;
-    width: 50%;
+    /*margin-left: 25%;*/
+    width: 80%;
 }
 /* Set the fixed height of the footer here */
 #footer {
